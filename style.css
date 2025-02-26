@@ -194,47 +194,70 @@ section.topo-site .flex {
 
 /*Estilo das especialidades*/
 
-section.especialidades {
+section#especialidades {
     padding: 80px 4%;
 }
 
-section.especialidades .flex {
-    gap: 60px;
+section#especialidades .interface {
+    max-width: 1280px;
+    margin: 0 auto;
 }
 
-.especialidades .especialidades-box {
-    color: #bebebe;
-    padding: 40px;
-    border: 2px solid #ff7e5f;
-    margin-top: 85px;
+section#especialidades h2.titulo {
+    color: #ffffff;
+    font-size: 48px;
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+section#especialidades h2.titulo span {
+    color: #ff7e5f; /* Cor destacada para o span */
+}
+
+/* Container das habilidades */
+section#especialidades .skills-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 colunas */
+    grid-template-rows: repeat(2, auto); /* 2 linhas */
+    gap: 50px; /* Espaçamento entre os cards */
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 1200px; 
+}
+
+/* Cards de habilidades */
+section#especialidades .skill-card {
+    border: 2px solid #ff7e5f; /* Borda com a cor destacada */
     border-radius: 25px;
-    transition: .2s;
-    text-align: left;
-    width: 400px;
-    justify-content: space-between;
-    height: auto
+    padding: 30px;
+    width: 200px;
+    height: 200px; /* Altura maior */
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.especialidades .especialidades-box:hover {
+section#especialidades .skill-card:hover {
     transform: scale(1.05);
-    box-shadow: 0 0 10px #ff7e5f;
+    box-shadow: 0 0 15px #ff7e5f; /* Efeito de sombra ao passar o mouse */
 }
 
-.especialidades .especialidades-box i {
+/* Ícones das habilidades */
+section#especialidades .skill-icon {
     font-size: 70px;
-    color: #f86c49;
+    color: #ff7e5f; /* Cor dos ícones */
+    margin-bottom: 20px;
 }
 
-.especialidades .especialidades-box p {
-    font-size: 22px;
-    margin: 15px 0;
-    text-align: start;
+/* Nome das habilidades */
+section#especialidades .skill-name {
+    color: #bebebe; /* Cor do texto */
+    font-size: 20px;
+    font-weight: 500;
 }
-
-.especialidades .especialidades-box h3 {
-    font-size: 28px;
-}
-
 /* Estilo Sobre */
 
 section.sobre {
@@ -607,26 +630,29 @@ footer {
         display: flex;
     }
     
-
-    /*MINHAS ESPECIALIDADES*/
-
-    .especialidades .especialidades-box {
-        width: 90%;
-        margin: 20px auto;
-        margin-top: 40px;
-        text-align: center;
-        padding: 20px;
+    /* Responsividade para especialidades */
+    @media screen and (max-width: 768px) {
+        section#especialidades .skills-container {
+            grid-template-columns: repeat(2, 1fr); /* 2 colunas em telas menores */
+            grid-template-rows: repeat(4, auto); /* 4 linhas em telas menores */
+        }
+    
+        section#especialidades .skill-card {
+            width: 180px; /* Reduzi um pouco o tamanho para telas menores */
+            height: 180px;
+        }
     }
-
-    .especialidades .especialidades-box p{
-        text-align: justify;
-    }
-
-    .especialidades {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap:0
+    
+    @media screen and (max-width: 480px) {
+        section#especialidades .skills-container {
+            grid-template-columns: 1fr; /* 1 coluna em telas muito pequenas */
+            grid-template-rows: repeat(8, auto); /* 8 linhas em telas muito pequenas */
+        }
+    
+        section#especialidades .skill-card {
+            width: 160px; /* Reduzi mais o tamanho para telas muito pequenas */
+            height: 160px;
+        }
     }
 
 
