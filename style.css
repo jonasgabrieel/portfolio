@@ -1,9 +1,11 @@
 /*Estilização Geral*/
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Lato", sans-serif;
+    font-family: "VT323", monospace;
+    font-style: normal;
 }
 
 body {
@@ -18,7 +20,7 @@ body {
 
 .interface .logo p {
     color: #f6f7f6d1;
-    font-size: 28px;
+    font-size: 38px;
 }
 
 .interface .logo p span {
@@ -42,7 +44,7 @@ button:hover, form .btn-enviar input:hover {
 
 .btn-contato button {
     padding: 10px 40px;
-    font-size: 18px;
+    font-size: 25px;
     font-weight: 600;
     color: #FFF;
     background: linear-gradient(45deg, #ff7e5f, #feb47b);
@@ -54,7 +56,7 @@ button:hover, form .btn-enviar input:hover {
 
 h2.titulo {
     color: #ffffff;
-    font-size: 48px;
+    font-size: 68px;
     text-align: center;
 }
 
@@ -83,7 +85,7 @@ header a {
     text-decoration: none;
     display: inline-block;
     transition: .2s;
-    font-size: 20px;
+    font-size: 25px;
 }
 
 header p {
@@ -178,8 +180,8 @@ section.topo-site .flex {
 
 .topo-site h1 {
     color: #bebebe;
-    font-size: 52px;
-    line-height: 50px;
+    font-size:82px;
+    line-height: 70px;
     width: 100%;
     margin-top: 10px;
 }
@@ -190,7 +192,7 @@ section.topo-site .flex {
 
 .topo-site .txt-topo-site p {
     color: #bebebe;
-    font-size: 22px;
+    font-size: 32px;
     text-align: justify;
     margin: 40px 0;
     width: 80%;
@@ -213,7 +215,7 @@ section#especialidades .interface {
 
 section#especialidades h2.titulo {
     color: #ffffff;
-    font-size: 48px;
+    font-size: 68px;
     text-align: center;
     margin-bottom: 70px;
 }
@@ -264,7 +266,7 @@ section#especialidades .skill-card:hover {
 
 /* Ícones das habilidades */
 section#especialidades .skill-icon {
-    font-size: 70px;
+    font-size: 85px;
     color: #ff7e5f; /* Cor dos ícones */
     margin-bottom: 20px;
     transition: transform 1.3s ease;
@@ -277,7 +279,7 @@ section#especialidades .skill-card:hover .skill-icon {
 /* Nome das habilidades */
 section#especialidades .skill-name {
     color: #bebebe; /* Cor do texto */
-    font-size: 20px;
+    font-size: 30px;
     font-weight: 500;
 }
 /* Estilo Sobre */
@@ -301,8 +303,8 @@ section.sobre .flex {
 }
 
 .sobre .txt-sobre h2 {
-    font-size: 48px;
-    line-height: 45px;
+    font-size: 68px;
+    line-height: 53px;
     margin-bottom: 30px;
 }
 
@@ -314,7 +316,7 @@ section.sobre .flex {
 .sobre .txt-sobre p {
     margin: 20px 0;
     text-align: justify;
-    font-size: 24px;
+    font-size: 28px;
 }
 
 .btn-social {
@@ -328,7 +330,7 @@ section.sobre .flex {
     height: 60px;
     border-radius: 50%;
     border: none;
-    font-size: 24px;
+    font-size: 30px;
     cursor: pointer;
     margin: 0 5px;
     background: linear-gradient(45deg, #ff7e5f 20%, #feb47b 80%);
@@ -352,7 +354,7 @@ section.portfolio .flex {
 
 
 .portfolio h2 {
-    font-size: 48px;
+    font-size: 68px;
 }
 
 .img-port {
@@ -415,7 +417,7 @@ section.portfolio .flex {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 24px;
+    font-size: 34px;
     font-weight: 600;
     color: #FFF;
     opacity: 0;
@@ -454,7 +456,7 @@ form input, form textarea {
     color: #000000;
     padding: 20px 15px;
     border-radius: 15px;
-    font-size: 18px;
+    font-size: 28px;
 }
 
 form textarea {
@@ -510,18 +512,20 @@ footer {
 
 #footer-conteudo h1 {
     margin-bottom: 0.75rem;
-    color:#ff7e5f
+    color:#ff7e5f;
+    font-size:30px;
 }
 
 #footer-conteudo h3 {
     margin-bottom: 1.5rem;
     color:#ff7e5f;
-    font-size: 20px
+    font-size: 30px
 }
 
 #footer-conteudo p {
     max-width: 250px;
     text-align: justify;
+    font-size: 20px;
 }
 
 .footer-link {
@@ -556,7 +560,7 @@ footer {
 }
 
 #footer-social-midia .footer-link i {
-    font-size: 1.50rem;
+    font-size: 1.80rem;
 }
 
 #footer-social-midia .footer-link:hover {
@@ -595,7 +599,7 @@ footer {
     width: 100%;
     text-align: center;
     color: #ffffff;
-    font-size: 0.9em;
+    font-size: 1.0em;
     font-weight: 100;
     display: flex;
     justify-content: center;
