@@ -34,7 +34,11 @@ button:hover, form .btn-enviar input:hover {
     transform: scale(1.15);
 }
 
-
+#lottie-animation {
+    width: 600px;
+    height: 600px;
+    margin: 0 auto;
+}
 
 .btn-contato button {
     padding: 10px 40px;
@@ -169,13 +173,14 @@ section.topo-site {
 section.topo-site .flex {
     align-items: center;
     justify-content: center;
+    
 }
 
 .topo-site h1 {
     color: #bebebe;
     font-size: 52px;
     line-height: 50px;
-    width: 50%;
+    width: 100%;
     margin-top: 10px;
 }
 
@@ -188,8 +193,11 @@ section.topo-site .flex {
     font-size: 22px;
     text-align: justify;
     margin: 40px 0;
-    width: 50%;
+    width: 80%;
     ;
+}
+.animation img {
+    display: block;
 }
 
 /*Estilo das especialidades*/
@@ -434,7 +442,7 @@ form {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    gap: 10px;
+    gap: 20px;
     margin-top: 40px;
 }
 
