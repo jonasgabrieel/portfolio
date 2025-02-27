@@ -210,15 +210,18 @@
                     <form action="https://formspree.io/f/myzkqrno" method="POST">
                         <input class="input" type="text" name="nome" id="nome"
                             placeholder="Seu nome completo:" required>
-                        <input class="input" type="text" name="email" id="email"
+                        <input class="input" type="email" name="email" id="email"
                             placeholder="Seu email:" required>
-                        <input class="input" type="text" name="telefone" id="telefone"
-                            placeholder="Seu celular:">
+                        <input class="input" type="tel" name="telefone" id="telefone" 
+                        placeholder="Seu celular:">
                         <textarea class="textarea" name="mensagem" id="mensagem"
-                            placeholder="Sua mensagem"></textarea>
+                            placeholder="Sua mensagem" required></textarea>
                         <div class="btn-enviar"><input type="submit"
                                 value="ENVIAR"></div>
                     </form>
+                    <div id="toast" class="toast">
+                        <span class="icone">✅</span> Sua mensagem foi enviada com sucesso!
+                    </div>
                 </div>
             </section><!--forms-->
 
@@ -294,6 +297,7 @@
                 autoplay: true,
                 path: 'images/Animation - 1740619386204.json'
                 });
+            
         </script>
     </body>
 </html>
