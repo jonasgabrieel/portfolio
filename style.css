@@ -233,16 +233,25 @@ section#especialidades .skill-card {
     width: 200px;
     height: 200px; /* Altura maior */
     text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.7s ease, box-shadow 0.7s ease;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    opacity: 0; /* Inicialmente invisível */
+    transform: translateY(200px); /* Começa um pouco abaixo */
 }
+
+section#especialidades .skill-card.visible {
+    opacity: 1; /* Torna visível */
+    transform: translateY(0); /* Volta à posição original */
+}
+
 
 section#especialidades .skill-card:hover {
     transform: scale(1.05);
-    box-shadow: 0 0 15px #ff7e5f; /* Efeito de sombra ao passar o mouse */
+    box-shadow: 0 0 15px #ff7e5f, 0 0 30px #feb47b; /* Duas camadas de sombra para um efeito mais intenso */
+    filter: brightness(1.1); /* Aumenta o brilho */
 }
 
 /* Ícones das habilidades */
@@ -250,6 +259,11 @@ section#especialidades .skill-icon {
     font-size: 70px;
     color: #ff7e5f; /* Cor dos ícones */
     margin-bottom: 20px;
+    transition: transform 1.3s ease;
+
+}
+section#especialidades .skill-card:hover .skill-icon {
+    transform: rotate(360deg); /* Gira 15 graus */
 }
 
 /* Nome das habilidades */
@@ -324,6 +338,10 @@ section.portfolio .flex {
     margin-top: 60px;
 }
 
+.potfolio a{
+    color:#ff7e5f ;
+}
+
 
 .portfolio h2 {
     font-size: 48px;
@@ -395,9 +413,13 @@ section.portfolio .flex {
     opacity: 0;
 }
 
+
 .overlay:hover {
     opacity: 1;
     transition: 0.5s;
+}
+.overlay a:hover {
+    color: #ff7e5f; /* Texto preto no hover */
 }
 
 /*ESTILO FORM*/

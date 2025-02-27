@@ -14,3 +14,12 @@ menu.addEventListener('click',() =>{
 overlay.addEventListener('click',() =>{
     menu.classList.remove('abrir-menu')
 })
+
+document.addEventListener("DOMContentLoaded", function() {
+    const skillCards = document.querySelectorAll('.skill-card');
+    skillCards.forEach((card, index) => {
+        setTimeout(() => {
+            card.classList.add('visible');
+        }, index * 150); // Delay para cada card
+    });
+});
