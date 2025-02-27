@@ -237,12 +237,10 @@ section.topo-site .flex {
     font-size: 32px;
     text-align: justify;
     margin: 40px 0;
-    width: 80%;
+    width: 90%;
     ;
 }
-.animation img {
-    display: block;
-}
+
 
 /*Estilo das especialidades*/
 
@@ -698,37 +696,18 @@ footer {
     section.topo-site .flex {
         gap: 40px;
     }
-    
+    #lottie-animation {
+        width: 300px;
+        height: 300px;
+        margin: 0 auto;
+        justify-content: center;
+
+    }
     
     .btn-abrir-menu i{
         color:#ff7e5f;
         font-size: 35px;
         display: flex;
-    }
-    
-    /* Responsividade para especialidades */
-    @media screen and (max-width: 768px) {
-        section#especialidades .skills-container {
-            grid-template-columns: repeat(2, 1fr); /* 2 colunas em telas menores */
-            grid-template-rows: repeat(4, auto); /* 4 linhas em telas menores */
-        }
-    
-        section#especialidades .skill-card {
-            width: 180px; /* Reduzi um pouco o tamanho para telas menores */
-            height: 180px;
-        }
-    }
-    
-    @media screen and (max-width: 480px) {
-        section#especialidades .skills-container {
-            grid-template-columns: 1fr; /* 1 coluna em telas muito pequenas */
-            grid-template-rows: repeat(8, auto); /* 8 linhas em telas muito pequenas */
-        }
-    
-        section#especialidades .skill-card {
-            width: 160px; /* Reduzi mais o tamanho para telas muito pequenas */
-            height: 160px;
-        }
     }
 
 
@@ -755,7 +734,14 @@ footer {
     .sobre .img-sobre img {
         width: 100%; 
     }
-
+    /*SESSÂO Especialidades*/
+    section#especialidades h2.titulo {
+        color: #ffffff;
+        font-size: 68px;
+        text-align: center;
+        margin-bottom: 70px;
+        line-height:50px;
+    }
     /*SESSÂO PORTFOLIO*/
 
     section.portfolio .flex {
@@ -796,4 +782,29 @@ footer {
     #footer-conteudo {
         flex-direction: column;
   }
+}
+
+/* Responsividade para especialidades */
+@media screen and (max-width: 768px) {
+    section#especialidades .skills-container {
+        grid-template-columns: repeat(2, 1fr); /* 2 colunas em telas menores */
+        grid-template-rows: repeat(4, auto); /* 4 linhas em telas menores */
+    }
+
+    section#especialidades .skill-card {
+        width: 180px; /* Reduzi um pouco o tamanho para telas menores */
+        height: 180px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    section#especialidades .skills-container {
+        grid-template-columns: 1fr; /* 1 coluna em telas muito pequenas */
+        grid-template-rows: repeat(8, auto); /* 8 linhas em telas muito pequenas */
+    }
+
+    section#especialidades .skill-card {
+        width: 160px; /* Reduzi mais o tamanho para telas muito pequenas */
+        height: 160px;
+    }
 }
